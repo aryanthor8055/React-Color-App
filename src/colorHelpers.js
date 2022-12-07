@@ -16,7 +16,7 @@ for(let level of levels){
 for( let color of starterPalette.colors){
 let scale=getScale(color.color,10).reverse();
 for(let i in scale){
-    newPalette.colors(levels[i]).push({
+    newPalette.colors[levels[i]].push({
 
         name:`${color.name} ${levels[i]}`,
         id:color.name.toLowerCase().replace(/ /g,"_"),
