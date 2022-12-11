@@ -1,4 +1,5 @@
 import react,{Component} from "react"
+import SingleColorPalette from "./SingleColorPalette";
 
 import PaletteList from "./PaletteList";
 import Palette from './Palette';
@@ -26,7 +27,7 @@ path="/palette/:id"
 render={routeProps =>(
   <Palette palette={generatePalette(this.findPalette(routeProps.match.params.id))}/>
 )}/>
-<Route exact path="/palette/:paletteId/:colorId" render={()=><h1>SSINGLE COLOR PAGE!</h1>}/>
+<Route exact path="/palette/:paletteId/:colorId" render={()=><SingleColorPalette/>}/>
     </Switch>
   );
 }
