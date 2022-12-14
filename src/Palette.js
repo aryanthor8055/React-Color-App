@@ -26,7 +26,8 @@ this.setState({level})
         name={color.name} 
         key={color.id} 
         moreUrl={`/palette/${id}/${color.id}`} 
-        showLink={true}/>
+        showingFullPalette={true}
+        />
     ))
     return (
       <div className='Palette'>
